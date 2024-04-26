@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Classification using FranklinNet</title>
+    <style>
+        body, html {
+            height: 90%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: url("{{ url_for('static', filename='background/wallhaven-zyokog_2560x1440.png') }}");  
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        h1 {
+            width: 100%;
+            font-size: 50pt;
+            color: #ffffff;
+            text-align: center;
+            margin-top: 200px; /* Reduced top margin */
+            margin-bottom: 10px; /* Space between title and form */
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            padding: 50px 0;
+        }
+        form {
+            border: 1px solid #ddd;
+            padding: 30px; /* Reduced padding */
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 500px; /* Width can be adjusted as needed */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Styles for file upload box */
+        .file-upload-wrapper {
+            width: 300px; /* Adjusted width */
+            height: 300px; /* Adjusted height to maintain the aspect ratio */
+            border: 2px dashed #ddd;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        .file-upload-wrapper input[type="file"] {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            cursor: pointer;
+        }
+        .file-upload-wrapper label {
+            display: flex; /* Changed to flex to center text both vertically and horizontally */
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%; /* Make label fill the wrapper */
+            margin: 0;
+            font-size: 15pt;
+            pointer-events: none;
+            z-index: 1; /* Ensures the label is above the input */
+        }
+
+        .file-upload-wrapper img {
+            max-width: 400px; /* Adjust as necessary */
+            max-height: 400px; /* Adjust as necessary */
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            z-index: 2; /* Ensures the image is above the label */
+        }
+        .form-group label {
+            font-size: 25pt; /* Adjust the font size to your preference */
+            text-align: center; /* Center the text horizontally */
+            width: 100%; /* Ensure the label takes full width to center properly */
+            display: block; /* Make label take its own line */
+            margin-bottom: 10px; /* Provide some space below the label */
+        }
+
+        .form-group {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        select, input[type="file"], input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 15pt;
+        }
+        input[type="submit"] {
+            background-color: #ef932a;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            border: none;
+        }
+        input[type="submit"]:hover {
+            background-color: #95ede4;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Classification using FranklinNet</h1>
+    <div class="container">
+        <form action="/predict" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="model">Choose a model</label>
+                <select name="model_choice" id="model">
+                    <option value="face">Gender classify Model</option>
+                    <option value="plant">Plant Disease classify Model</option>
+                    <option value="skin">Skin Disease classify Model</option>
+                </select>
+            </div>
+            <div class="file-upload-wrapper">
+                <input type="file" name="file" id="file" required onchange="previewFile()">
+                <label for="file">Upload your image</label>
+                <img id="preview" alt="Image preview...">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Upload and classify">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function previewFile() {
+            const preview = document.getElementById('preview');
+            const file = document.getElementById('file').files[0];
+            const reader = new FileReader();
+            const label = document.querySelector('.file-upload-wrapper label'); // Get the label
+
+            reader.addEventListener("load", function () {
+                // Convert image file to base64 string and display it
+                preview.src = reader.result;
+                preview.style.display = 'block'; // Make the image visible
+
+                label.style.display = 'none'; // Hide the label
+            }, false);
+
+            if (file) {
+                reader.readAsDataURL(file);
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Result</title>
+    <style>
+        body {
+            background-image: url("{{ url_for('static', filename='background/wallhaven-exrvgk_2560x1440.png') }}");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; /* Background images do not scroll with the page */
+            font-family: 'Arial', sans-serif; /* Ensuring consistent font usage */
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px; /* Padding around the containers to avoid touching the edges */
+        }
+        .image-container, .result-container {
+            width: 400px; /* Increased size to make it square */
+            height: 400px; /* Making the container square */
+            margin: 10px; /* Providing some space between the containers */
+            background: rgba(255, 255, 255, 0.9); /* Slightly more opacity for better readability */
+            padding: 20px; /* Padding inside the containers */
+            border-radius: 8px; /* Rounded corners */
+            display: flex; /* Using flex to center the content */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            flex-direction: column; /* Stack children vertically */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Adding some shadow for depth */
+            position: relative; /* Needed for absolute positioning of the image */
+        }
+        img {
+            width: 80%; /* Full width */
+            height: 80%; /* Full height */
+            object-fit: cover; /* Cover the container without distorting the image */
+            position: absolute; /* Absolute position within the container */
+        }
+        .result-container {
+            font-size: 1.5em; /* Increased font size for better visibility */
+            text-align: center; /* Centering the text */
+        }
+
+                /* Add this to your <style> tag */
+        .return-button {
+            position: fixed; /* Fixed position */
+            top: 20px; /* 20 pixels from the top */
+            right: 20px; /* 20 pixels from the right */
+            background-color: #ef932a; /* Button color */
+            color: white; /* Text color */
+            padding: 10px 20px; /* Padding inside the button */
+            text-decoration: none; /* No underline on the text */
+            font-family: 'Arial', sans-serif; /* Font family */
+            font-size: 1em; /* Font size */
+            border-radius: 5px; /* Rounded corners */
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Shadow for depth */
+            z-index: 1000; /* Ensure it's on top of other elements */
+        }
+
+        .return-button:hover {
+            background-color: #95ede4; /* Color when hovered */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Add this inside the <body> tag, at the beginning -->
+    <a href="/" class="return-button">Try Other Image</a>
+
+    <div class="container">
+        <div class="image-container">
+            <img src="{{ url_for('static', filename=image_path) }}" alt="Uploaded Image"/>
+        </div>
+        <div class="result-container">
+            <p>Prediction Accuracy: {{ result.accuracy }}</p>
+            <p>Predicted Category: {{ result.category }}</p>
+        </div>
+    </div>
+</body>
+</html>
