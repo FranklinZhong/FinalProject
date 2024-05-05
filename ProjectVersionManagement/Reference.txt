@@ -1,0 +1,92 @@
+References
+[1] A. Saha, S. Nithish Kumar, and P. Nithyakani, ‘Age and Gender Prediction using
+Adaptive Gamma Correction and Convolutional Neural Network’, in 2023
+International Conference on Computer Communication and Informatics (ICCCI), Jan. 2023, pp. 1–5. doi: 10.1109/ICCCI56745.2023.10128447.
+[2] D. Müller, I. Soto-Rey, and F. Kramer, ‘An Analysis on Ensemble Learning
+Optimized Medical Image Classification With Deep Convolutional Neural Networks’,
+IEEE Access, vol. 10, pp. 66467–66480, 2022, doi:
+10.1109/ACCESS.2022.3182399.
+[3] S. Aryanmehr, M. Karimi, and F. Z. Boroujeni, ‘CVBL IRIS Gender Classification
+Database Image Processing and Biometric Research, Computer Vision and
+Biometric Laboratory (CVBL)’, in 2018 IEEE 3rd International Conference on Image, Vision and Computing (ICIVC), Jun. 2018, pp. 433–438. doi:
+10.1109/ICIVC.2018.8492757.
+[4] C. Szegedy, V. Vanhoucke, S. Ioffe, J. Shlens, and Z. Wojna, ‘Rethinking the
+Inception Architecture for Computer Vision’. arXiv, Dec. 11, 2015. doi:
+10.48550/arXiv.1512.00567.
+[5] M. Sandler, A. Howard, M. Zhu, A. Zhmoginov, and L.-C. Chen, ‘MobileNetV2:
+Inverted Residuals and Linear Bottlenecks’. arXiv, Mar. 21, 2019. doi:
+10.48550/arXiv.1801.04381.
+[6] J. Hu, L. Shen, S. Albanie, G. Sun, and E. Wu, ‘Squeeze-and-Excitation Networks’. arXiv, May 16, 2019. doi: 10.48550/arXiv.1709.01507.
+[7] K. He, X. Zhang, S. Ren, and J. Sun, ‘Deep Residual Learning for Image
+Recognition’, in 2016 IEEE Conference on Computer Vision and Pattern
+Recognition (CVPR), Jun. 2016, pp. 770–778. doi: 10.1109/CVPR.2016.90.
+[8] M.-H. Guo et al., ‘Attention Mechanisms in Computer Vision: A Survey’, Comput. Vis. Media, vol. 8, no. 3, pp. 331–368, Sep. 2022, doi: 10.1007/s41095-022-0271-y.
+[9] M. Alghaili, Z. Li, and H. A. R. Ali, ‘Deep feature learning for gender classification
+with covered/camouflaged faces’, IET Image Process., vol. 14, no. 15, pp. 3957–
+3964, 2020, doi: 10.1049/iet-ipr.2020.0199.
+[10] Y. Lecun, L. Bottou, Y. Bengio, and P. Haffner, ‘Gradient-based learning applied to
+document recognition’, Proc. IEEE, vol. 86, no. 11, pp. 2278–2324, Nov. 1998, doi:
+10.1109/5.726791.
+[11] A. Mao, M. Mohri, and Y. Zhong, ‘Cross-Entropy Loss Functions: Theoretical
+Analysis and Applications’. arXiv, Jun. 19, 2023. doi: 10.48550/arXiv.2304.07288.
+[12] S. Ioffe and C. Szegedy, ‘Batch Normalization: Accelerating Deep Network Training
+by Reducing Internal Covariate Shift’. arXiv, Mar. 02, 2015. doi:
+10.48550/arXiv.1502.03167.
+[13] A. Saxena, P. Singh, and S. Narayan Singh, ‘Gender and Age detection using Deep
+Learning’, in 2021 11th International Conference on Cloud Computing, Data
+Science & Engineering (Confluence), Jan. 2021, pp. 719–724. doi:
+10.1109/Confluence51648.2021.9377041.
+[14] V. Sheoran, S. Joshi, and T. R. Bhayani, ‘Age and Gender Prediction using Deep
+CNNs and Transfer Learning’, vol. 1377, 2021, pp. 293–304. doi: 10.1007/978-981- 16-1092-9_25.
+[15] L. K. Ashim, N. Suresh, and P. C. V, ‘A Comparative Analysis of Various Transfer
+Learning Approaches Skin Cancer Detection’, in 2021 5th International Conference
+on Trends in Electronics and Informatics (ICOEI), Jun. 2021, pp. 1379–1385. doi:
+10.1109/ICOEI51242.2021.9452854.
+[16] M. Hossain, Kh. Sadik, Md. M. Rahman, F. Ahmed, Md. N. Hossain Bhuiyan, and M. M. Khan, ‘Convolutional Neural Network Based Skin Cancer Detection (Malignant
+vs Benign)’, in 2021 IEEE 12th Annual Information Technology, Electronics and
+Mobile Communication Conference (IEMCON), Oct. 2021, pp. 0141–0147. doi:
+10.1109/IEMCON53756.2021.9623192.
+[17] S. N. Patil and H. D. Patil, ‘Modified CNNs for Automated Binary Classification of
+Skin Lesions: Benign vs.Malignant’, in 2023 3rd International Conference on
+Advancement in Electronics & Communication Engineering (AECE), Nov. 2023, pp. 958–964. doi: 10.1109/AECE59614.2023.10428444.
+[18] A. Barbadekar, V. Ashtekar, and A. Chaudhari, ‘Skin Cancer Classification and
+Detection Using VGG-19 and DesNet’, in 2023 International Conference on
+Computational Intelligence, Networks and Security (ICCINS), Dec. 2023, pp. 1–6. doi: 10.1109/ICCINS58907.2023.10449996.
+[19] D. Khamsa, L. Pascal, B. Zakaria, M. Lokman, and M. Y. Zakaria, ‘Skin Cancer
+Diagnosis and Detection Using Deep Learning’, in 2023 International Conference
+on Electrical Engineering and Advanced Technology (ICEEAT), Nov. 2023, pp. 1–6. doi: 10.1109/ICEEAT60471.2023.10426611.
+[20] M. Belmir, W. Difallah, and A. Ghazli, ‘Plant Leaf Disease Prediction and
+Classification Using Deep Learning’, in 2023 International Conference on Decision
+Aid Sciences and Applications (DASA), Sep. 2023, pp. 536–540. doi:
+10.1109/DASA59624.2023.10286672.
+[21] T. T. Showrav, S. Bain, M. Hossain, K. I. Ahmed, S. A. Fattah, and S. Ahmed, ‘A
+Two-stage Approach for Plant Disease Classification Based on Deep Neural
+Networks and Transfer Learning’, in 2022 12th International Conference on
+Electrical and Computer Engineering (ICECE), Dec. 2022, pp. 469–472. doi:
+10.1109/ICECE57408.2022.10088587.
+[22] S. Sharma and M. Vardhan, ‘Hyperparameter Tuned Hybrid Convolutional Neural
+Network (H-CNN) for Accurate Plant Disease Classification’, in 2023 International
+Conference on Communication, Circuits, and Systems (IC3S), May 2023, pp. 1–6. doi: 10.1109/IC3S57698.2023.10169257.
+[23] S. Jain, P. Jaidka, and V. Jain, ‘Plant Leaf Disease Classification using Deep
+learning based Hybrid Approach’, in 2023 International Conference on
+Communication, Security and Artificial Intelligence (ICCSAI), Nov. 2023, pp. 383–
+387. doi: 10.1109/ICCSAI59793.2023.10421381.
+[24] A. Lakshmanarao, M. R. Babu, and T. S. R. Kiran, ‘Plant Disease Prediction and
+classification using Deep Learning ConvNets’, in 2021 International Conference on
+Artificial Intelligence and Machine Vision (AIMV), Gandhinagar, India: IEEE, Sep. 2021, pp. 1–6. doi: 10.1109/AIMV53313.2021.9670918.
+[25] Z. Jiang, ‘Face Gender Classification Based on Convolutional Neural Networks’, in
+2020 International Conference on Computer Information and Big Data Applications
+(CIBDA), Apr. 2020, pp. 120–123. doi: 10.1109/CIBDA50819.2020.00035.
+[26] A. Dhomne, R. Kumar, and V. Bhan, ‘Gender Recognition Through Face Using
+Deep Learning’, Procedia Comput. Sci., vol. 132, pp. 2–10, Jan. 2018, doi:
+10.1016/j.procs.2018.05.053.
+[27] ‘Gender Classification Dataset’. Accessed: Dec. 14, 2023. [Online]. Available:
+https://www.kaggle.com/datasets/gpiosenka/gender-classification-from-an-image
+[28] ‘PlantVillage Dataset’. Accessed: Apr. 07, 2024. [Online]. Available:
+https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
+[29] ‘Skin Cancer: Malignant vs. Benign’. Accessed: Apr. 07, 2024. [Online]. Available:
+https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign/data
+[30] D. Müller, I. Soto-Rey, and F. Kramer, ‘An Analysis on Ensemble Learning
+Optimized Medical Image Classification With Deep Convolutional Neural Networks’,
+IEEE Access, vol. 10, pp. 66467–66480, 2022, doi:
+10.1109/ACCESS.2022.3182399.
