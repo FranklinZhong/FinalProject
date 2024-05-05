@@ -1,0 +1,7 @@
+1.‘Gender Classification Dataset’. Accessed: Dec. 14, 2023. [Online]. Available: https://www.kaggle.com/datasets/gpiosenka/gender-classification-from-an-image
+
+2.‘PlantVillage Dataset’. Accessed: Apr. 07, 2024. [Online]. Available:
+https://www.kaggle.com/datasets/abdallahalidev/plantvillage-dataset
+
+3.‘Skin Cancer: Malignant vs. Benign’. Accessed: Apr. 07, 2024. [Online]. Available:
+https://www.kaggle.com/datasets/fanconic/skin-cancer-malignant-vs-benign/data
